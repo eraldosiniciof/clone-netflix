@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-reponsive.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <title>Clone Netflix - Por Eraldo Sinicio</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="logo">NETFLIX</div>
+        <div class="options">
+          <button class="signin"><a href="./signin.html">Entrar</a></button>
+        </div>
+      </header>
+      <div class="central-content">
+        <div class="section-one">
+          <div class="title">Filmes, séries e muito mais. Sem limites.</div>
+          <div class="subtitle">
+            Assista onde quiser. Cancele quando quiser.
+          </div>
+        </div>
+        <div class="section-two">
+          <div class="description">
+            Pronto para assistir? Informe seu email para criar ou reiniciar sua
+            assinatura.
+          </div>
+          <div class="form">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <button>Vai!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <div class="box">
+        <div class="text">
+          <div class="title">Aproveite na TV</div>
+          <div class="subtitle">
+            Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+            aparelhos de Blu-ray e outros dispositivos.
+          </div>
+        </div>
+        <img src="./imgs/tv-netflix.jpeg" alt="imagem da netflix na tv" />
+      </div>
+
+      <div class="box">
+        <img src="./imgs/cel-netflix.jpeg" alt="imagem da netflix no celular" />
+        <div class="text">
+          <div class="title">Baixe séries para assistir offline.</div>
+          <div class="subtitle">
+            Salve seus títulos favoritos e sempre tenha algo para assistir.
+          </div>
+        </div>
+      </div>
+      <div class="questions">
+        <div class="title">Alguns esclarecimentos</div>
+        <div class="box-question">Porquê criar a cópia do Netflix?</div>
+        <div class="answer hide">
+          Para praticar, principalmente, o comportamento do display flex e os
+          posicionamentos de elementos na página. Além de usar um pouco de
+          JavaScript para dinamizar alguns elementos.
+        </div>
+        <div class="box-question">
+          O que foi utilizado para criar este site?
+        </div>
+        <div class="answer hide">
+          Foi utilizado HTML, CSS e JavaScirpt. Também utilizei o jQuery para
+          gerar o carrossel na página de usuário logado para mostrar os filmes.
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="links">
+          <a
+            href="https://www.github.com/eraldosiniciof"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/eraldosiniciof"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+          <a
+            href="https://www.instagram.com/eraldosiniciof"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a href="mailto:eraldosinicio@gmail.com" target="_blank">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      alert(
+        'Esta página foi desenvolvida para estudo. Apenas a parte front-end está implementada. Em hipótese alguma pediremos login e senha.'
+      )
+    </script>
+  </body>
+</html>

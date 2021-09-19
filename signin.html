@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-reponsive.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./owlCarousel/dist/assets/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      href="./owlCarousel/dist/assets/owl.theme.default.min.css"
+    />
+    <title>Clone Netflix - Por Eraldo Sinicio</title>
+  </head>
+  <body>
+    <div class="main-signin">
+      <header>
+        <div class="left">
+          <div class="logo">NETFLIX</div>
+          <a href="#">Inicio</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Bombando</a>
+          <a href="#">Minha lista</a>
+        </div>
+        <div class="right">
+          <div class="options">
+            <p><i class="fas fa-search"></i></p>
+            <p>PERFIL</p>
+            <p><i class="fas fa-bell"></i></p>
+          </div>
+        </div>
+      </header>
+
+        <button><i class="fas fa-play"><span>Assista agora</span></i></button>
+
+    </div>
+    <div class="details">
+      <p>Em alta</p>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img id="min-break" src="./imgs/signin/carousel/break.jpg" alt="" />
+      </div>
+      <div class="item">
+        <img id="min-doctor" src="./imgs/signin/carousel/doctor.jpg" alt="" />
+      </div>
+      <div class="item">
+        <img id="min-casa" src="./imgs/signin/carousel/la-casa.jpg" alt="" />
+      </div>
+      <div class="item">
+        <img id="min-peaky" src="./imgs/signin/carousel/peaky.jpg" alt="">
+      </div>
+      <div class="item">
+        <img id="min-loki" src="./imgs/signin/carousel/loki.jpg" alt="">
+      </div>
+      <div class="item">
+        <img id="min-flash" src="./imgs/signin/carousel/flash.jpg" alt="">
+      </div>
+      <div class="item">
+        <img id="min-greys" src="./imgs/signin/carousel/greys.jpg" alt="">
+      </div>
+      <div class="item">
+        <img id="min-see" src="./imgs/signin/carousel/see.jpg" alt="">
+      </div>
+      <div class="item">
+        <img id="min-cartel" src="./imgs/signin/carousel/cartel.jpg" alt="">
+      </div>
+    </div>
+
+
+    <script
+      src="https://kit.fontawesome.com/5f628da16e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jquery.js"></script>
+    <script src="./owlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          center: true,
+          loop: true,
+          autoWidth: true,
+          margin: 20,
+          nav: true,
+          animateOut: true,
+          dots: false,
+        })
+      })
+
+      const items = document.querySelectorAll('.item')
+      document.querySelector('.owl-carousel').addEventListener('click', (event) => {
+        const classElement = event.target.classList.value
+        const element = event.target.id
+        !classElement ? $('.main-signin').css({'background-image': `url(./imgs/signin/background/${element.replace('min','max')}.jpg)`}) : ''
+      })
+    </script>
+  </body>
+</html>

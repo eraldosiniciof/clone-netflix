@@ -1,0 +1,289 @@
+:root {
+  --red-text: rgb(255, 0, 0);
+  --red-button: rgb(179, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: white;
+  font-family: sans-serif;
+
+  text-decoration: none;
+}
+
+.main {
+  background: url('./imgs/background-transf.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-bottom: solid 10px rgb(36, 36, 36);
+}
+
+.main .logo {
+  color: var(--red-text);
+}
+
+.main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 70px;
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--red-text);
+}
+
+header .options button {
+  background-color: var(--red-button);
+  padding: 7px 20px;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+header .options button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.central-content {
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+
+  margin: 120px auto;
+  padding: 5px;
+}
+
+.central-content .section-one {
+  width: 80%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.central-content .section-two {
+  width: 100%;
+}
+
+.central-content .section-two .description {
+  font-size: 1.1rem;
+}
+
+.central-content .section-two .form {
+  margin-top: 30px;
+}
+
+.central-content .section-two .form input {
+  padding: 20px;
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  width: 70%;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.central-content .section-two .form button {
+  padding: 20px;
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  width: 20%;
+
+  background-color: var(--red-button);
+  color: white;
+  cursor: pointer;
+}
+
+.central-content .section-two .form button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.details {
+  background-color: black;
+}
+
+.details .box {
+  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  border-bottom: solid 10px rgb(36, 36, 36);
+}
+
+.details .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details img {
+  max-width: 350px;
+  max-height: 250px;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px;
+}
+
+.questions .box-question {
+  margin-top: 10px;
+  background-color: rgb(68, 68, 68);
+  padding: 20px;
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.questions .box-question:hover {
+  cursor: pointer;
+}
+
+.questions .answer {
+  margin-top: 1px;
+  background-color: rgb(43, 42, 42);
+  padding: 20px;
+  width: 50%;
+  font-size: 1.1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.links {
+  width: 100vw;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-around;
+}
+.links a {
+  font-weight: bold;
+  color: rgb(158, 158, 158);
+  text-decoration: none;
+}
+.links a:hover {
+  color: white;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+}
+
+header .left a {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-left: 20px;
+  color: white;
+}
+
+header .left a:hover {
+  color: rgb(255, 0, 0);
+}
+
+header .right .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+header .right .options p {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.main-signin {
+  background: url('./imgs/signin/max-break.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-bottom: solid 10px rgb(36, 36, 36);
+}
+
+.main-signin .logo {
+  color: var(--red-text);
+}
+
+.main-signin header {
+  position: fixed;
+
+  width: 100vw;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.342));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 70px;
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--red-text);
+}
+
+.owl-carousel {
+  background-color: black;
+}
+
+.owl-carousel .item {
+  cursor: pointer;
+}
+
+.details p {
+  margin-left: 30px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.main-signin button {
+  margin: 44% 5%;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(255, 99, 71, 0.432);
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-signin button:hover {
+  background-color: tomato;
+}
+
+.main-signin button i span {
+  margin-left: 15px;
+}
