@@ -31,4 +31,13 @@
   img {
     margin: 20px;
   }
+
+  .main-signin {
+    background: url('./imgs/signin/max-break.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    border-bottom: solid 10px rgb(36, 36, 36);
+  }
 }
